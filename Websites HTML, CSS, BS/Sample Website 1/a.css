@@ -1,0 +1,23 @@
+* {
+}
+.nav-link {
+  color: brown;
+}
+
+a {
+  display: block;
+}
+
+a:hover {
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  background-color: cornflowerblue;
+}
+
+.mt-n1 {
+  margin-top: -5rem !important;
+}
+
+footer {
+  display: block;
+}
+
