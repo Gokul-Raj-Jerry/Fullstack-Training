@@ -6,11 +6,6 @@ add(10,20,30)
 add(10,20,30,10)
  */
 
-/* let names = ["Rahul", "Sonia", "Priyanka", "Modi"]
-for (let i = 0; i < 3; i++) {
-    console.log(names[i]);
-} */
-
 let names = ["Rahul", "Sonia", "Priyanka", "Modi"]
 for (name of names) {
     console.log(name);

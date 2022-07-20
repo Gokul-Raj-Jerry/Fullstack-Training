@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./a.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./reg.css">
 
     <title>REGESTRATION</title>
 </head>
@@ -67,24 +69,30 @@
                 <h1 class="bg-success text-white text-center p-2 rounded-3">******Regestration Form******</h1>
                 <div class="row">
                     <div class="col-md-12 mt-3 input-group">
-                        <input type="text" class="form-control form-control-lg" placeholder="First Name">
-                        <input type="text" class="form-control form-control-lg" placeholder="Last Name">
+                        <input type="text" class="form-control form-control-lg" placeholder="Full Name"
+                            id="contact-name" onkeyup="validateName()">
+                        <span id="name-error" style="color:red;"></span>
                     </div>
                     <div class="col-md-6 mt-3"><input type="email" class="form-control form-control-lg"
                             placeholder="Enter Email"></div>
+                    <span id="email-error"></span>
                     <div class="col-md-6 mt-3"><input type="number" class="form-control form-control-lg"
                             placeholder="Enter Mobile Number"></div>
+                    <span id="phone-error"></span>
                     <div class="col-md-12 mt-3"><input type="password" class="form-control form-control-lg"
                             placeholder="Enter password"></div>
+                    <span id="password-error"></span>
                 </div>
                 <div class="m-3 form-floating">
                     <textarea class="form-control form-control-lg" name="" id="" cols="40" rows="10"></textarea>
                     <label for="Feedback">Feedback</label>
+                    <span id="message-error"></span>
                 </div>
                 <div class="m-3">
                     <input type="checkbox" class="form-check-input"> Remember me
                 </div>
                 <button type="submit" class="btn btn-success">SUBMIT</button>
+                <span id="submit-error"></span>
             </div>
 
             <div class="col-md-4">
@@ -234,6 +242,7 @@
     <!-- Footer -->
 </body>
 
+<script src="./reg.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -2,3 +2,4 @@
 
 let cars = ["bmw", 56, "rr", "Tata", "XUV", "Kia",]
 console.log(cars[5]);
+
