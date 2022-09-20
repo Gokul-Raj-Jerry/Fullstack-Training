@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./a.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./reg.css">
+
+    <title>REGESTRATION</title>
+</head>
+
+<body>
+    <!-- Headder -->
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href=""><img src="" alt="">LOGO</a>
+            <div>
+                <div>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div class="navbar ml-auto">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCT</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./tab.html">TAB</a></li>
+                        <li><a class="dropdown-item" href="./mobile.html">MOBILE</a></li>
+                        <li><a class="dropdown-item" href="./laptop.html">LAPTOP</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">SERVICE</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./regestration.html">Regestration</a></li>
+                        <li><a class="dropdown-item" href="./contacts.html">Contacts</a></li>
+                        <li><a class="dropdown-item" href="">LAPTOP</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link disabled" href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <!-- Headder -->
+
+    <!-- Form start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="bg-success text-white text-center p-2 rounded-3">******Regestration Form******</h1>
+                <div class="row">
+                    <div class="col-md-12 mt-3 input-group">
+                        <input type="text" class="form-control form-control-lg" placeholder="Full Name"
+                            id="contact-name" onkeyup="validateName()">
+                        <span id="name-error" style="color:red;"></span>
+                    </div>
+                    <div class="col-md-6 mt-3"><input type="email" class="form-control form-control-lg"
+                            placeholder="Enter Email"></div>
+                    <span id="email-error"></span>
+                    <div class="col-md-6 mt-3"><input type="number" class="form-control form-control-lg"
+                            placeholder="Enter Mobile Number"></div>
+                    <span id="phone-error"></span>
+                    <div class="col-md-12 mt-3"><input type="password" class="form-control form-control-lg"
+                            placeholder="Enter password"></div>
+                    <span id="password-error"></span>
+                </div>
+                <div class="m-3 form-floating">
+                    <textarea class="form-control form-control-lg" name="" id="" cols="40" rows="10"></textarea>
+                    <label for="Feedback">Feedback</label>
+                    <span id="message-error"></span>
+                </div>
+                <div class="m-3">
+                    <input type="checkbox" class="form-check-input"> Remember me
+                </div>
+                <button type="submit" class="btn btn-success">SUBMIT</button>
+                <span id="submit-error"></span>
+            </div>
+
+            <div class="col-md-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387460.23879664723!2d-74.15138523386358!3d40.65120041088845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24369470a592b%3A0x4109d18b6c5c7b05!2sQueens%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1655329099523!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- Form End -->
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident
+                        voluptate
+                        esse
+                        quasi, veritatis totam voluptas nostrum.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <a href="#!">PROJECTS</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#!">ABOUT US</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#!">BLOG</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="#!">AWARDS</a>
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+                    <!-- Contact details -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <p>
+                                <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> info@example.com
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-print mr-3"></i> + 01 234 567 89
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+                    <!-- Social buttons -->
+                    <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+                    <!-- Facebook -->
+                    <a type="button" class="btn-floating btn-fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a type="button" class="btn-floating btn-tw">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Google +-->
+                    <a type="button" class="btn-floating btn-gplus">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                    <!-- Dribbble -->
+                    <a type="button" class="btn-floating btn-dribbble">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body>
+
+<script src="./reg.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
