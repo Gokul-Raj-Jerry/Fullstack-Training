@@ -3,13 +3,13 @@
 // React component responsibility render the UI
 
 import Navbar from "./Navbar/Navbar";
+import Users from "./Axios/Users";
 
 let App = () => {
   return (
     <div>
       <Navbar />
-      <Navbar />
-      <Navbar />
+      <Users />
     </div>
   );
 };
