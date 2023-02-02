@@ -18,7 +18,9 @@ export class Users extends Component {
           Get Data
         </button>
         <div className="container">
+        <h1 className="text-center bg-light">Axios data fetch Method</h1>
           <table className="table table-hover table-stripped">
+            
             <thead className="table table-dark">
               <tr>
                 <th>ID</th>

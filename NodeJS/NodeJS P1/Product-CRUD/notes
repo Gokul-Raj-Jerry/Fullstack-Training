@@ -1,0 +1,14 @@
+installing required Dependencies
+
+npm i express mongoose morgan chalk dotenv cors
+
+
+morgan - http logger
+chalk - terminal styling
+dotenv - reading configuration file data
+cors - cors origin resourse sharing - enable application access from client
+nodemon - run application in develeper mode
+
+How to enable ES6?
+1. Bable
+2. "type":"Module"

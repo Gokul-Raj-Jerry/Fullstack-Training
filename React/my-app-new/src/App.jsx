@@ -14,7 +14,8 @@ import Users from "./AxiosiUser/Users";
 // import Router
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Link Components/Home";
-
+import Usersaxios from "./Kiranaxios/Usersaxios";
+import Bind from "./AxiosiUser/Bind";
 
 // import About from "./Link Components/About";
 // import Products from "./Link Components/Products";
@@ -41,6 +42,8 @@ let App = () => {
       <Login />
       <Regfm />
       <Users />
+      <Usersaxios />
+      <Bind />
     </div>
   );
 };
