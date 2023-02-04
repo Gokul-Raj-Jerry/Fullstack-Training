@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Basic">
+    <meta name="keywords" content="HTML Practice">
+    <meta name="robots" content="NOINDEX,NOFOLLOW">
+    <title>HTML Practice</title>
+</head>
+
+<body>
+    <form action="process.js" method="post">
+        <div>
+            <label for="name">Full Name</label>
+            <input required type="text" id="name" placeholder="Enter your Name" value="admin">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input required email type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="sex">Gender</label>
+            <select name="gender" id="gender">
+                <option value="select">Select Options</option>
+                <option value="male">Male</option>
+                <option value="male">Female</option>
+                <option value="male">Transgender</option>
+            </select>
+        </div>
+        <div>
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" name="birthdate">
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" min="10" max="15">
+        </div>
+        <div>
+            <label for="membership">membership</label>
+            <input type="radio" name="membership" id="membership" value="basic">Basic
+            <input type="radio" name="membership" id="membership" value="Premium">Premium
+            <input type="radio" name="membership" id="membership" value="Super">Super
+        </div>
+        <div>
+            <label for="membership">I Like Techonology</label>
+            <input type="checkbox" name="teach" value="cloud" id="teach">Cloud
+            <input type="checkbox" name="teach" value="programs" id="teach">Program
+            <input type="checkbox" name="teach" value="devps" id="teach">Devps
+        </div>
+        <input type="submit" value="submit">
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>

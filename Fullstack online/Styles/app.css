@@ -1,0 +1,40 @@
+.box {
+    border: 1px;
+    background-color: rgb(98, 128, 154);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.aqua {
+    background-color: aqua;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+input[type='email'] {
+    background-color: orange;
+}
+
+
+section p {
+    background-color: red;
+}
+
+section>p {
+    background-color: green;
+}
+
+.head+p {
+    background-color: yellow;
+}
+
+.head~p {
+    background-color: orange;
+}
+
+.box1 {
+    background-color: #19da43;
+    border: 2px blue;
+    width: 500px;
+    padding: 0px 0px 0px 0px;
+}
