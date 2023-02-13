@@ -1,0 +1,135 @@
+Var - old variable Declaration.
+Let - is a Modern variable Declaration.
+Const - Value of the Variable can't be changed.
+
+Types of Datatype
+string, Boolean, null, undefined, BigInt, Typeof, Object
+
+Type Convertions
+-------------------
+
+Data Type Convertions
+Operators
+conditions if, ifesle, switch
+functions
+Button with JS functions
+
+JS functions
+Types of functions 
+
+1. Pure function
+function Login(){
+
+}
+Login()
+
+2. function with parameter
+function Login(userName,password){
+    
+}
+Login(jerry,pas@123)
+
+
+3. function scope
+let userName = 'Thepori therumugam' // global variable
+
+function Login() {
+    userName = 'Ada Thean Ada' // local variable
+    console.log(userName);
+}
+Login()
+
+4. Arrow function
+
+// Objects - stote (key: value pair)
+// array - store (indexing format)
+
+// Simple Loops // for of / for in 
+// Data in Key : value // for in loop
+// Data in Index based // for of .
+
+// object & array 
+//  how to create ?
+// How to Insert data (values)
+// How to access data
+// How to populate data (loop)
+// How to delete data
+
+
+
+Data Base are Tables and Collections format of Data
+
+Data Structure
+------------------
+What is DS
+1 2 3 4 5 
+
+
+Array & Objects
+-------------------------
+
+
+JavaScript Request ---> client to serverside
+Server-side Response --> server-side to client side
+
+JavaScript --> 
+Server-side (Java,DotNet,PHP,python,NodeJS)
+
+
+hhtp - API communicates between 2 
+
+Response ---> http or https ---> API Application P
+http  - Hypertext Transfer Protocol
+https -  Hypertext Transfer Protocol Secure
+
+Webservice - Interaction between 2 Application is API
+REST API in JSON format
+
+Application - developed different Progaming language
+Platform - OS _ Windows, Linus, MacOS
+Mobile - Android, IOS
+
+facebook ---> Laptop Login (posting content)
+facebook ---> Android App = login = view
+
+-----------------
+
+JavaScript ---> Data Consume ---> JSON
+
+WHat is JSON ?
+JavaScript Object Notation
+
+Array and Ogject mix --> JSON
+
+
+AJAX --> Asynchronous -- > 
+
+Synchronous 
+means the code runs in a particular sequence of instructions given in the program
+
+Asynchronous
+code execution allows to execution of the upcoming instructions immediately.
+
+
+AJAX : AJAX is a technique for accessing web servers from a web page.
+AJAX stands for Asynchronous JavaScript And XML.
+1. Read data from a web server - after the page has loaded
+2. Update a web page without reloading the page
+3. Send data to a web server - in the background
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+IQ How to  API Fetch data 
+
+Step 1 --> Create XML http Request Object
+Step 2 --> Write a callback function
+Step 3 --> open the Request 
+Step 4 --> sent the Request
+
+XHR - old way of request in JavaScript API Fetching method
+
+Fetch API - Simple and easy to Fetch API
+Support by all Modern browsers
+
+
+
+
