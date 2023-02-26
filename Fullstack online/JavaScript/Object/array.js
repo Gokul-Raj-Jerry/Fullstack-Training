@@ -54,6 +54,7 @@ array.forEach((index, item) => {
 let mylimit = age.filter(agenum => {
     return agenum > 5
 });
+
 console.log(mylimit); */
 
 

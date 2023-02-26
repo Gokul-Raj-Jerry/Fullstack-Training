@@ -2,7 +2,7 @@ function loadDoc() {
     var locv = new XMLHttpRequest();
     locv.onreadystatechange = function () {
     }
-    locv.open('GET', 'https://jsonplaceholder.typicode.com/users');
+    locv.open();
     locv.send();
 
 
@@ -15,3 +15,6 @@ function loadDoc() {
     // xhttp.open("GET", "ajax_info.txt");
     // xhttp.send();
 };
+
+
+'GET', 'https://jsonplaceholder.typicode.com/users'
