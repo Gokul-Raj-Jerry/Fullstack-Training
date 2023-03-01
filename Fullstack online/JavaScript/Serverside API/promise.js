@@ -4,7 +4,8 @@ const mypost = {
     body: 'Body of FilpKart'
 } // JS Object
 
-function mydpost() {
+// promise
+async function mydpost() {
     fetch('https://jsonplaceholder.typicode.com/posts', {
         method: 'POST',
         headers: {
@@ -12,6 +13,13 @@ function mydpost() {
         },
         body: JSON.stringify(mypost)
     })
-        .then(res => res.json())
-        .then(res => console.log(res));
+        .then(res => {
+            if (res.ok) {
+                return res.json();
+            } else {
+                return Promise.reject({ staus: res.status, statusText: res.statusText });
+            }
+        })
+        .then(res => console.log(res))
+        .catch(err => console.log('Error, with Message', err.statusText));
 }
