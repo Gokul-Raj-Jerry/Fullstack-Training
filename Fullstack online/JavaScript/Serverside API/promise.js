@@ -17,9 +17,12 @@ async function mydpost() {
             if (res.ok) {
                 return res.json();
             } else {
-                return Promise.reject({ staus: res.status, statusText: res.statusText });
+                return Promise.reject({ status: res.status, statusText: res.statusText });
             }
         })
         .then(res => console.log(res))
         .catch(err => console.log('Error, with Message', err.statusText));
 }
+
+
+

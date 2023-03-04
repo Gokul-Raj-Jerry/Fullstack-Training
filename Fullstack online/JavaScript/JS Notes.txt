@@ -147,15 +147,85 @@ let, var, const - difference
 call() , apply() , bind()
 cloures
 
+
+Promise - is said to be settled if it is either fulfilled or rejected, but not pending.
+Await - await operator is used to wait for a Promise and get its fulfillment value. It can only be used inside an async function or at the top level of a module.
+Callback - A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
+
+Axios - Axios is a promise-based HTTP Client for node.js and the browser
+
+promise API SYNTAX
+
+let myPromise = newPromise((resolve, reject)=>{
+    let data
+    if(data){
+        resolve(data)
+    }else {
+        reject();
+    }
+})
+
+
+
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ------------------------------------------
+
+NodeJS
+
 Serverless Architecture
 
 NodeJS - Not a Progaming language
 NodeJS (Express) - serverside code (PHP, Java, Dotnet)
 
 Step-1 : Install NodeJS and NPM (Node Package Manager)
+Step-2 : Initialise NodeJS - npm Initialise - create name
+Step-3 : index.js - fetch API
+Step-4 : Install fetch API pakage from npm
+Step-5 : Run the index.js file
+
+---------------------------------
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX 
+----------------------------------
+Project - 1 
+
+Express Server - Rest API - Users
+http://localhost:3000/users
+
+HTML / JS - Access using Fetch REST API 
+Display to HTML page using DOM
 
 
-Promise - is said to be settled if it is either fulfilled or rejected, but not pending.
+Complete Project 
+-----------------------
+
+Difference in Let Var Const
+
+important Dom Method
+settimeout()
+Setinterval()
+
+----------------------------------
+OOPS - Object Oriented Progaming
+----------------------------------
+
+Encapsulation - contains class, Constructor -super(), 
+Polymorphism
+Inheritance - code reusability - paren & child 
+Abstract
+
+Properties
+Ex- Employee // Entity
+-> name
+-> age
+-> email
+-> salary
+
+functionality or method
+skill() method
+role()
+ 
+
+Constructor
+
 
