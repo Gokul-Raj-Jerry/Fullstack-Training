@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Jerry",
+    "username": "jerry123",
+    "email": "jerry@gmail.com",
+    "address": {
+      "street": "HRBR Layout",
+      "city": "Bengaluru",
+      "zipcode": "560084"
+    },
+    "phone": "9980975439"
+  },
+  {
+    "id": 2,
+    "name": "Sago",
+    "username": "physosago132",
+    "email": "physo@gmail.com",
+    "address": {
+      "street": "babusapalaya",
+      "city": "Bengaluru",
+      "zipcode": "560044"
+    },
+    "phone": "9900760225"
+  },
+  {
+    "id": 3,
+    "name": "kiran",
+    "username": "child1998",
+    "email": "child@gmail.com",
+    "address": {
+      "street": "Austin Town",
+      "city": "Bengaluru",
+      "zipcode": "560088"
+    },
+    "phone": "8050407546"
+  },
+  {
+    "id": 4,
+    "name": "jagdish",
+    "username": "jaggu123",
+    "email": "jaggu@gmail.com",
+    "address": {
+      "street": "kammanahalli",
+      "city": "Bengaluru",
+      "zipcode": "560084"
+    },
+    "phone": "9113631312"
+  }
+]

@@ -1,4 +1,4 @@
-class Company { // parent class
+class Company { // parent class  // DRY code
     constructor() {
     }
     empinfo() {
@@ -13,7 +13,7 @@ class Emp extends Company {  // child class
         console.log('i am constructor');
     }
     skills() { // method
-        console.log('I am method' + ' ' + this.name);
+        console.log('I am method is a function' + ' ' + this.name);
     }
     rolls() { // method
         console.log('I am also method');
