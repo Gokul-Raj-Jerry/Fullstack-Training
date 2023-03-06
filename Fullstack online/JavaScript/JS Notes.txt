@@ -45,8 +45,8 @@ Login()
 // array - store (indexing format)
 
 // Simple Loops // for of / for in 
-// Data in Key : value // for in loop
-// Data in Index based // for of .
+// Object - Data in Key : value // for in loop
+// Array - Data in Index based // for of .
 
 // object & array 
 //  how to create ?
