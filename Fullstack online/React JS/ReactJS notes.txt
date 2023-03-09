@@ -1,0 +1,52 @@
+ReactJS
+ReactJS = HTML + JS = JSX
+React Library - contains Class - created by React Team
+
+Function = block of code to perform a particular task
+function mylogin(parameter) {
+    console.log('Hello Function');
+    return value
+}
+mylogin(argument) // declare a function
+
+
+Alternative for function is arrow function
+let mylogin = () => { }   // Arrow function 
+------------------------------------------------------
+
+Alreat() will not work on client side
+
+------------------------------------------------------------
+OOPS : 
+
+Encapsulation - contains - class, Constructor - Properties & methods ex- super(), 
+Polymorphism - method overloading. duplicate a methos is Polymorphism. ex add(), add(loading)
+Inheritance - code reusability - paren & child 
+Abstract - 
+
+Web Application - Encapsulation
+Login Page
+        username
+        password
+
+        logincheck()  // validation function
+
+Important / DOM - FUN - EVENT
+
+
+-----------------------------------------------------
+
+What is React ?
+JavaScript Library for building UI/UX
+UI - User Interface / View Layer
+UX - User Experences
+
+React JS (Front End) --> Server Side --> Database
+
+React has 2 Library: 
+1. React Component API -> core 
+2. React DOM -> document object model
+
+facebook create ReactJS, Best Performance
+
+Virtual DOM 

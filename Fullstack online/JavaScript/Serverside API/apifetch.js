@@ -40,16 +40,6 @@ function myPost() {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* const mypost = {
     title: 'Mechanical Monster',
     body: 'Brave Invaders',
