@@ -1,24 +1,20 @@
 ReactJS
 ReactJS = HTML + JS = JSX
 React Library - contains Class - created by React Team
-
+-----------------------------------------------------------
 Function = block of code to perform a particular task
 function mylogin(parameter) {
     console.log('Hello Function');
     return value
 }
 mylogin(argument) // declare a function
-
-
+----------------------------------------------------------
 Alternative for function is arrow function
 let mylogin = () => { }   // Arrow function 
-------------------------------------------------------
-
-Alreat() will not work on client side
-
 ------------------------------------------------------------
-OOPS : 
-
+Alreat() will not work on client side
+--------------------------------------------------------------
+OOPS : EPIA
 Encapsulation - contains - class, Constructor - Properties & methods ex- super(), 
 Polymorphism - method overloading. duplicate a methos is Polymorphism. ex add(), add(loading)
 Inheritance - code reusability - paren & child 
@@ -32,21 +28,39 @@ Login Page
         logincheck()  // validation function
 
 Important / DOM - FUN - EVENT
-
-
 -----------------------------------------------------
-
 What is React ?
 JavaScript Library for building UI/UX
 UI - User Interface / View Layer
 UX - User Experences
-
+facebook created ReactJS, Best Performance
+------------------------------------------------------------
 React JS (Front End) --> Server Side --> Database
-
+---------------------------------------------------------
 React has 2 Library: 
 1. React Component API -> core 
 2. React DOM -> document object model
-
-facebook create ReactJS, Best Performance
-
+--------------------------------------------------
 Virtual DOM 
+
+React Components: Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+EX: index page, Login page, About page.
+
+How to create React Component ? 2 types
+1. Function based -> static - simple Component. Static web page EX: Nav bar.
+2. Class based -> OOPS -> Server side dependent -> Business logic complex needed class. EX: Emp data of 5000.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+SPA: Single Page Application -> ReactJS 
+
+Parent Component = Root Component -> Child
+JSX = HTML + JS 
+
+
+
+
+
+
+
+
+
