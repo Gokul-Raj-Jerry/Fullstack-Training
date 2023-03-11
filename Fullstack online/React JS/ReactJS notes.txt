@@ -15,9 +15,9 @@ let mylogin = () => { }   // Arrow function
 Alreat() will not work on client side
 --------------------------------------------------------------
 OOPS : EPIA
-Encapsulation - contains - class, Constructor - Properties & methods ex- super(), 
-Polymorphism - method overloading. duplicate a methos is Polymorphism. ex add(), add(loading)
-Inheritance - code reusability - paren & child 
+Encapsulation: contains - class, Constructor - Properties & methods ex- super(), 
+Polymorphism: method overloading. duplicate a methos is Polymorphism. ex add(), add(loading)
+Inheritance: code reusability - paren & child 
 Abstract - 
 
 Web Application - Encapsulation
@@ -52,15 +52,37 @@ How to create React Component ? 2 types
 --------------------------------------------------------------------------------------------------------------------------------------
 
 SPA: Single Page Application -> ReactJS 
-
 Parent Component = Root Component -> Child
 JSX = HTML + JS 
+-------------------------------------------------------
+$  Class file name should be in capital letter  $
+--------------------------------------------------------
+Function and Class Component
 
+React.Fragments - if mutiple child Components used in file. (<></>)
+1. Function component
+ex:
+    function Welcome(props) {
+      return (<>
+      <h1>Hello, {props.name}</h1>;
+      </>)
+    }
+2. Class Component
+ex: 
+    class Welcome extends React.Component {
+      render() {
+        return (<>
+        <h1>Hello, {this.props.name}</h1>;
+        </>)
+      }
+    }
+extends React.Component (parent) class needs component behavior so inherit's the 
+class contains method(), ex: Constructor(),
+class contains Constructor
 
-
-
-
-
-
-
+Props = Properties - one way communication Ex: Parent -> Child relationship
+Props: Communication between two Components
+Props can have mutiple arguments
+Props can send only Parent to child data. 
+props is read only 
 
