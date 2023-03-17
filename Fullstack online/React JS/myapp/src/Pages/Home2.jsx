@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+// class component
 export class Home2 extends Component {
   render() {
     return (

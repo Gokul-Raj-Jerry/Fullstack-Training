@@ -1,5 +1,6 @@
 ReactJS
 ReactJS = HTML + JS = JSX
+A JavaScript Library for building UI
 React Library - contains Class - created by React Team
 -----------------------------------------------------------
 Function = block of code to perform a particular task
@@ -67,9 +68,23 @@ ex:
       <h1>Hello, {props.name}</h1>;
       </>)
     }
+
+Props = Properties - one way communication Ex: Parent to Child relationship
+Props: Communication between two Components
+Props can have mutiple arguments
+Props can share data fromParent to child only. 
+props is read only 
+
+Props is to read data
+
 2. Class Component
 ex: 
     class Welcome extends React.Component {
+      Constructor(){
+        super()
+
+      }
+      this.
       render() {
         return (<>
         <h1>Hello, {this.props.name}</h1>;
@@ -78,11 +93,26 @@ ex:
     }
 extends React.Component (parent) class needs component behavior so inherit's the 
 class contains method(), ex: Constructor(),
-class contains Constructor
+class contains Constructor, 
+class contains its a part of class structure .this is reffering to currect Object
+-------------------------------------------------------------------------------===
+Difference between Function & Component
 
-Props = Properties - one way communication Ex: Parent -> Child relationship
-Props: Communication between two Components
-Props can have mutiple arguments
-Props can send only Parent to child data. 
-props is read only 
+Function Based (static Website)- stateless
+Componenet Based (data management frm serverside)- state
+---------------------------------------------------------------------
+
+Constructor(){ // initilaise object value
+  super // to inherin the value
+}
+
+
+
+OOPS - Class based Component --> Constructor --> this: reffering to current object -> 
+OOPS -> complex logic - CRUD -> serverside
+class component state {object} - data management -> server side communication
+events- react events & JS events  while we use bind
+
+
+
 

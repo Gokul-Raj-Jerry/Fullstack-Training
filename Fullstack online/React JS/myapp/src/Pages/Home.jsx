@@ -1,5 +1,5 @@
 import React from "react";
-
+// function component
 // parent component
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
     </div>
   );
 }
-
+// child component
 function Mysec() {
   return (
     <div>

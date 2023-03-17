@@ -18,14 +18,6 @@ app.listen(5000, (err) => {
 
 
 
-
-
-
-
-
-
-
-
 /* import Express from "express";
 import dotenv from "dotenv"
 import mongoose from "mongoose";
