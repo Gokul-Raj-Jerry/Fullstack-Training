@@ -106,13 +106,44 @@ Constructor(){ // initilaise object value
   super // to inherin the value
 }
 
-
-
 OOPS - Class based Component --> Constructor --> this: reffering to current object -> 
 OOPS -> complex logic - CRUD -> serverside
 class component state {object} - data management -> server side communication
 events- react events & JS events  while we use bind
 
+Lifecycle has all methods parent class
+mounting 
+unmounting 
+------------------------------------------------------------
+HOOKS
+Hooks are a new addition in React 16.8.
+They let you use state and other React features without writing a class
+---------------->>>>>>>>>>>-->>>>>>>>>>>>
+import React, { useState } from 'react';
 
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
 
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+console(state)
+optscr // (2)[undefied,f]  2 parameter
+(2) = initial state
+[] =  Array 
+
+Destructuring
+The destructuring assignment syntax is a JavaScript expression that makes it possible to
+ unpack values from arrays, or properties from objects, into distinct variables.
+
+Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects
+ into a bunch of variables, as sometimes that’s more convenient.
 

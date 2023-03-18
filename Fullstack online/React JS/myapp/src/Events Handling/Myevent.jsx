@@ -7,11 +7,20 @@ class Myevent extends Component {
         this.state = {
             displayinfo: false
         }
+        this.togledis = this.togledis.bind(this)
+        // this.readMore = this.readMore.bind(this)
     }
-    readMore() {
+    /* readMore() {
         console.log('read info');
         // this.state.displayinfo = true
         this.setState({ displayinfo: true })
+    }
+
+    showLess() {
+        this.setState({ displayinfo: false })
+    } */
+    togledis() {
+        this.setState({ displayinfo: !this.state.displayinfo }) 
     }
 
     render() {
@@ -23,8 +32,11 @@ class Myevent extends Component {
                     {
                         this.state.displayinfo ? <div>
                             <p>Passing Arguments to Event Handlers</p>
+                            {
+                                <button onClick={this.togledis}>SHOW LESS</button>
+                            }
                         </div> : (
-                            <button onClick={this.readMore}>Read more</button>
+                            <button onClick={this.togledis}>Read more</button>
                         )
                     }
                 </div>
