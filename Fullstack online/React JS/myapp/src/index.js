@@ -1,9 +1,9 @@
 // root file
 import ReactDOM from "react-dom/client"; // Virtual DOM
-import React from 'react';
-import App from './App'
+import React from "react";
+import App from "./App";
 
-// New method to Root DOM - 1 
+// New method to Root DOM - 1
 /* const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
@@ -20,15 +20,12 @@ const element = <App />;
 root.render(element);
  */
 
-
 // Alternative method - 3
-const root = ReactDOM.createRoot(
-    document.getElementById('root')
-);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function tick() {
-    const element = (<App />);
-    root.render(element);
+  const element = <App />;
+  root.render(element);
 }
 
 setInterval(tick, 1);

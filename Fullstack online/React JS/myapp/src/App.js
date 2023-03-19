@@ -1,12 +1,12 @@
 // main file
 import React from "react";
-import Hookstate from "./Hooks/Hookstate";
+import LoginControl from "./Conditional Rendering/LoginControl";
 
 function App() {
   return (
-    <>
-      <Hookstate />
-    </>
+    <React.StrictMode>
+      <LoginControl />
+    </React.StrictMode>
   );
 }
 

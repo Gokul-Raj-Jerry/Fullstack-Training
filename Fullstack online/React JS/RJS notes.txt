@@ -142,8 +142,12 @@ optscr // (2)[undefied,f]  2 parameter
 
 Destructuring
 The destructuring assignment syntax is a JavaScript expression that makes it possible to
- unpack values from arrays, or properties from objects, into distinct variables.
+ unpack values from arrays, orproperties from objects, into distinct variables.
 
 Destructuring assignment is a special syntax that allows us to “unpack” arrays or objects
  into a bunch of variables, as sometimes that’s more convenient.
 
+
+Conditional Rendering.
+Ternary operator
+(condition) ? (if true, do this) : (otherwise, do this)
