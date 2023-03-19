@@ -151,3 +151,26 @@ Destructuring assignment is a special syntax that allows us to “unpack” arra
 Conditional Rendering.
 Ternary operator
 (condition) ? (if true, do this) : (otherwise, do this)
+
+component
+state
+props
+event 
+condition rendering  = with Conditional operator (Ternay)
+
+--------------------------------------------------------------------------------
+Modern JavaScript
+
+// normal JS
+function add(a,b,c){
+  return a+b+c
+}
+
+Best Practice
+// modern JS Function - asign a variable name type to the function
+let add = function add(a,b,c){
+  return a+b+c
+}
+
+
+

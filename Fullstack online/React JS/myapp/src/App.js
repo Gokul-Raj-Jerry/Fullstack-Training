@@ -1,11 +1,12 @@
 // main file
 import React from "react";
-import LoginControl from "./Conditional Rendering/LoginControl";
+import Mailbox from "./Conditional Rendering/Mail Box/Mailbox";
 
 function App() {
+  const messages = ["React", "Re: React", "Re:Re: React"];
   return (
     <React.StrictMode>
-      <LoginControl />
+      <Mailbox unreadMessages={messages} />
     </React.StrictMode>
   );
 }
