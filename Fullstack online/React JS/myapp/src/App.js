@@ -1,12 +1,12 @@
 // main file
 import React from "react";
-import Mailbox from "./Conditional Rendering/Mail Box/Mailbox";
+import Form from "./Form/Form";
 
 function App() {
   const messages = ["React", "Re: React", "Re:Re: React"];
   return (
     <React.StrictMode>
-      <Mailbox unreadMessages={messages} />
+      <Form />
     </React.StrictMode>
   );
 }
