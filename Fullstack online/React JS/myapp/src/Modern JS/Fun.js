@@ -55,3 +55,4 @@ add();
 // console.log(myCourse1); // var can be access outside and inside the block
 
 
+// Let is best practice
