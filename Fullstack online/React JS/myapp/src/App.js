@@ -1,12 +1,12 @@
 // main file
 import React from "react";
-import Form from "./Form/Form";
+import Datahandle from "./Data Handling/Datahandle";
 
 function App() {
   const messages = ["React", "Re: React", "Re:Re: React"];
   return (
     <React.StrictMode>
-      <Form />
+      <Datahandle />
     </React.StrictMode>
   );
 }
