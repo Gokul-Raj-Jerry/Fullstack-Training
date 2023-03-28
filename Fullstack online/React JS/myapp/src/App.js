@@ -1,13 +1,25 @@
 // main file
 import React from "react";
-import Datahandle from "./Data Handling/Datahandle";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from "./Routing & Navigation/Pages/About";
+import Contact from "./Routing & Navigation/Pages/Contact";
+import Home from "./Routing & Navigation/Pages/Home";
+import Navbar from "./Routing & Navigation/Pages/Navbar";
+import Product from "./Routing & Navigation/Pages/Product";
 
 function App() {
-  const messages = ["React", "Re: React", "Re:Re: React"];
   return (
-    <React.StrictMode>
-      <Datahandle />
-    </React.StrictMode>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Product" element={<Product />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

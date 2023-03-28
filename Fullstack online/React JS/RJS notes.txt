@@ -161,6 +161,10 @@ condition rendering  = with Conditional operator (Ternay)
 --------------------------------------------------------------------------------
 Modern JavaScript
 
+arrow function
+let scopr
+for of / for in / for each
+
 // normal JS
 function add(a,b,c){
   return a+b+c
@@ -172,5 +176,12 @@ let add = function add(a,b,c){
   return a+b+c
 }
 
+-----------------------------------------------------------------------
+Routing and Navigation
+what and why...?
 
+Single Page Application
 
+Step-1 npm i react-router-dom
+Step-2 { BrowserRouter, Router, Link }
+Step-3 Router Path Configuration
