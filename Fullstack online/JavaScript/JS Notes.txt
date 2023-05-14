@@ -252,16 +252,15 @@ Abstract - Abstraction is the process of hiding the internal details of an appli
 2. Process Obstraction = We don’t need to provide details about all the functions of an object. When we hide the internal implementation of the different functions involved in a user operation, it creates process abstraction.
 
 
-Properties
+Properties = JavaScript property is a member of an object that associates a key with a value.
 Ex- Employee // Entity
 -> name
 -> age
 -> email
 -> salary
 
-functionality or method
-skill()
-role()
+functionality or method = JavaScript methods are actions that can be performed on objects. A JavaScript method is a property containing a function definition. Property. Value.
+EX- skill(), role()
  
 Constructor initiallisze the object value and execution at first
 
