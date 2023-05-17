@@ -23,13 +23,13 @@ const filteredNumbers = num.filter((element) => {
 })
 console.log(filteredNumbers);
 
-// reduce - reduces the array into a single value 
+// reduce - reduces the array into a single value
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const reducedArray = array.reduce((prevValue, curValue) => {
-    return prevValue + curValue 
+    return prevValue + curValue
 }, 0);
-console.log(reducedArray); 
+console.log(reducedArray);
  */
 //event handling
 
@@ -49,10 +49,12 @@ console.log(reducedArray);
 
 // slice() - selects a section in an array
 
-const a = [ 10, 20, 30, 40, 50];
+/* const a = [ 10, 20, 30, 40, 50];
 const b = a.slice(0,3);
 console.log(b);
 const c = a.slice(-3, -1);
 console.log(c);
+ */
+//splice() - Removes elements from an array and if necessary inserts new data
 
-//splice() - Removes elements from an array and if necessary inserts new wkw
+

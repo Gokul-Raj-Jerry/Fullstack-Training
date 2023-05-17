@@ -1,8 +1,9 @@
-import { createStore } from "@reduxjs/toolkit";
+// import { useState } from "react";
+import { createStor } from "@reduxjs/toolkit";
 
 const initialState = { counter: 0, showCounter: true }
 
-const counterReducer = (state = initialState, action) => {  // Create a Reducer
+const counterReducer = (state = initialState, action) => {
   if (action.type === "inc") {
     return {
       counter: state.counter + 1,
@@ -34,8 +35,8 @@ const counterReducer = (state = initialState, action) => {  // Create a Reducer
   return state
 };
 
-const store = createStore( // Step-1  Create a Store 
-  counterReducer // Step-3  point the reducer in Store
+const store = createStore(
+  counterReducer
 );
 
 export default store

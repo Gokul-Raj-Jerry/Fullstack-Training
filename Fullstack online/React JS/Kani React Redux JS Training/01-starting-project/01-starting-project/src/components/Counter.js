@@ -1,17 +1,17 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux'; // Step-6 
 import classes from './Counter.module.css';
 
 const Counter = () => {
 
-  // Dispatching Actions From Inside Components
+  // Dispatching Actions From Inside Components. useDispatch Hooks
   const dispatch = useDispatch()
 
   // Counter Using Redux Data in React Components  useSelectior gives access to store
-  const counter = useSelector(state => state.counter)
-  const show = useSelector(state => state.showCounter)
+  const counter = useSelector(state => state.counter)  // Step-6  Use redux data in react component using use Selector
+  const show = useSelector(state => state.showCounter)  // useSelector Hooks
 
   const incHandler = () => {
-    dispatch({ type: 'inc' })
+    dispatch({ type: 'inc' }) // step-7  Dispatch action in component
   }
 
   const inchighhandler = () => {

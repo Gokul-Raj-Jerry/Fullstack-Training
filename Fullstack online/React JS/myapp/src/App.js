@@ -1,11 +1,11 @@
 // main file
 import React from "react";
-import Navbar from "./Redux/Navbar/Navbar";
+import Form from "./Form/Form";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Form />
     </>
   );
 }
