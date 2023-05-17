@@ -245,18 +245,22 @@ OOPS - Object Oriented Progaming
 Encapsulation - contains - class, Constructor - Properties & methods ex- super(), 
 Polymorphism - method overloading. duplicate a methos is Polymorphism. ex add(), add(loading)
 Inheritance - code reusability - paren & child 
-Abstract - 
+Abstract - Abstraction is the process of hiding the internal details of an application from the outer world.
 
-Properties
+1. Data Obstraction = When the object data is not visible to the outer world, it creates data abstraction. If needed, access to the Objects’ data is provided through some methods.
+
+2. Process Obstraction = We don’t need to provide details about all the functions of an object. When we hide the internal implementation of the different functions involved in a user operation, it creates process abstraction.
+
+
+Properties = JavaScript property is a member of an object that associates a key with a value.
 Ex- Employee // Entity
 -> name
 -> age
 -> email
 -> salary
 
-functionality or method
-skill()
-role()
+functionality or method = JavaScript methods are actions that can be performed on objects. A JavaScript method is a property containing a function definition. Property. Value.
+EX- skill(), role()
  
 Constructor initiallisze the object value and execution at first
 
