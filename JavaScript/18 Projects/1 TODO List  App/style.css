@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: cneter;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: blueviolet;
+  font-size: 10rem;
+  text-align: center;
+  opacity: 0.4;
+}
+
+form {
+  box-shadow: 0 4px 10px rgb(151, 145, 145);
+  max-width: 100%;
+  width: 400px;
+}
+
+.input {
+  border: none;
+  color: rgb(77, 77, 77);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: rgb(210, 201, 201);
+}
+
+.input::placeholder {
+  color: rgb(161, 159, 156);
+}
+
+.todos {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li {
+  border-top: 1px solid rgb(64, 64, 64);
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos li.complete {
+  color: rgb(148, 148, 148);
+  text-decoration: line-through;
+}
+
+small {
+  color: rgb(157, 156, 156);
+  margin-top: 3rem;
+  text-align: center;
+}
