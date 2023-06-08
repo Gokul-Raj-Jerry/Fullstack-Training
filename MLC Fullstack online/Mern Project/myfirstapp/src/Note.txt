@@ -1,0 +1,10 @@
+reat, react-DOM, 
+
+reactDOM(what to render = component and where to render the component )
+
+component 
+compoennts let you split UI into  independent
+reusable code
+JS class is compoennts
+
+class is 

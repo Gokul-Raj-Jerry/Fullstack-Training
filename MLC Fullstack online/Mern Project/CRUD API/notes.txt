@@ -1,0 +1,22 @@
+Express
+Client Request and response express responsibility
+API
+light weight
+Express Develops within 5 line of code 
+Web application Frame Works
+server side font side communication
+express to data base communication
+
+// how to create server in express ?
+
+Express Modules = HTTP Methods
+GET, POST, PUT, DEL
+
+
+Use ROUTER - Express JS
+Routing refers to how an server side application response to client request to particular endpoint
+
+Routers are helpful in seperating conserns
+such a differnt endpoint and keep relevant
+portions of the source code together.
+they help in building maintainable code.
