@@ -1,0 +1,540 @@
+HTML, CSS, JS, React
+
+HTML - HyperText Markup Language
+HTML is the standard markup language for documents designed to be displayed in a web browser.
+HTML element is everything from the start tag to the end tag.
+
+**********************************************************************
+
+CSS stands for Cascading Style Sheets.
+The word cascading means that a style applied to a parent element will also apply to all children elements within the parent.
+Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+With CSS, you can control the 
+color, 
+font, 
+the size of text, 
+the spacing between elements, 
+what background images or background colors are to be used,
+
+CSS can be added to HTML documents in 3 ways:
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+
+CSS Difference between fixed, relative, absolute and position
+
+The position property specifies the type of positioning method used for an element.
+position: static - is not positioned in any special way; it is always positioned according to the normal flow of the page:
+position: relative - is positioned relative to its normal position.
+position: fixed -  is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+position: absolute -  is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+position: sticky -  is positioned based on the user's scroll position.
+
+
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+We can divide CSS selectors into five categories:
+
+Simple selectors (select elements based on name, id, class)
+Combinator selectors (select elements based on a specific relationship between them)
+Pseudo-class selectors (select elements based on a certain state)
+Pseudo-elements selectors (select and style a part of an element)
+Attribute selectors (select elements based on an attribute or attribute value)
+
+**********************************************************************
+
+JS Fundamentals
+
+JS Engine ? Its a programming or library which executes the JS Code.
+JavaScript is a programming language that adds interactivity to your website.
+
+JS Statments - set of codes are Statments
+JS Keywords/Reserve words :- Keywords or reserve words cant be used as name identifiers
+JS identifiers of Rules - 
+JS Data Type - 
+JS Control Flow - 
+JS Function - 
+
+**********************************************************************
+
+Var, let, const 
+
+Var old variable Declaration.  
+Var is a Global Scope
+var has a function scope, not a block scope.
+Redeclaration is possible.  Ex: a=10 a=20 //possible
+
+let - is a Modern variable Declaration.
+let has a block scope.
+Redeclaration is not possible.  Ex: a=10 a=20 // not possible
+
+const - Value of the Variable can't be changed.
+
+The block scope of a variable means that the variable is accessible within the block that is between the curly braces.
+
+If you use var outside of a function, it belongs to the global scope.
+If you use var inside of a function, it belongs to that function.
+If you use var inside of a block, i.e. a for loop, the variable is still available outside of that block.
+
+**********************************************************************
+
+Hoisting
+In JavaScript, a variable can be used before it has been declared.
+var x; // Declare x
+x = 5; // Assign 5 to x
+clg(x)
+
+**********************************************************************
+
+Event bubbling
+When an event happens on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors.
+
+
+Closure functions 
+
+**********************************************************************
+
+Spread Operator - Extract and Copy
+The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
+
+Ex: const names = ["Kani","Palani","Jerry"]
+    const spreadedNames = [...names]
+    clg(spreadedNames) // ["Kani","Palani","Jerry"]
+
+**********************************************************************
+
+Rest operator - is used when we dont knw how many arguments the functions will take.
+Only one rest operator should be used in a paranthesis
+rest operator should be used as last parameter if more than one parameter exists.
+Add all members: 
+const sumUp = (...numbers)=>{
+    let total = 0;
+    for(let number of numbers){
+        total += number;
+        }
+        return total;
+}
+
+        clg(sumUp(1,2,3,4,5)) // 15
+
+**********************************************************************
+
+Callback Function
+A callback function is a function passed into another function as an argument, 
+which is then invoked inside the outer function to complete some kind of routine or action.
+
+function greeting(name) {
+  alert(`Hello, ${name}`);
+}
+
+function processUserInput(callback) {
+  const name = prompt("Please enter your name.");
+  callback(name);
+}
+
+processUserInput(greeting);
+
+**********************************************************************
+
+Difference between querySelector and querySelectorAll.
+
+document.querySelector is used to select a single element from the DOM tree, 
+while document.querySelectorAll is used to select multiple elements from the DOM tree.
+
+// Select the first <div> element
+let el = document.querySelector("div"); 
+
+// Select all <div> elements
+let els = document.querySelectorAll("div"); 
+
+**********************************************************************
+
+Array
+
+Array - It stores multiple values and elements in one variable. 
+Array is a special type of object.
+
+Adding and removing elements in an array(push, unshift, pop, shift)
+
+let fruits = ["Apple", "Banana", "Orange"];
+fruits.push("Mango"); // Add a new element to the end of the array
+fruits.unshift("Lemon"); // Add a new element to the beginning of the array
+fruits.pop(); // Remove the last element from the array
+fruits.shift(); // Remove the first element from the array
+clg(fruits) // Apple,Banana,Orange,Mango
+
+**********************************************************************
+
+Splice method - The splice() method adds and/or removes array elements. - The splice() method overwrites the original array.
+Removes elements from an array and if necessary inserts new data
+
+array.splice(index, howmany, item1, ....., itemX)
+
+index -	Required. The position to add/remove items. Negative value defines the position from the end of the array.
+howmany -  	Optional. Number of items to be removed.
+item1, ..., itemX	Optional. New elements(s) to be added.
+
+**********************************************************************
+
+Slice method  -  The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end.  
+The original array will not be modified.
+selects a section in an array
+
+slice()
+slice(start)
+slice(start, end)
+
+const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+**********************************************************************
+
+Concat method  -  The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
+
+console.log(array3);
+// Expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+concat()
+concat(value0)
+concat(value0, value1)
+concat(value0, value1, /* … ,*/ valueN)
+
+**********************************************************************
+
+Find method  -  The find() method returns the first element in the provided array that satisfies the provided testing function. 
+If no values satisfy the testing function, undefined is returned.
+
+const array1 = [5, 12, 8, 130, 44];
+const found = array1.find(element => element > 10);
+console.log(found);
+// Expected output: 12
+
+find(callbackFn)
+find(callbackFn, thisArg)
+
+**********************************************************************
+
+Findindex method  -  The findIndex() method returns the index of the first element in an array that satisfies the provided testing function.
+ If no elements satisfy the testing function, -1 is returned.
+
+const array1 = [5, 12, 8, 130, 44];
+const isLargeNumber = (element) => element > 13;
+console.log(array1.findIndex(isLargeNumber));
+// Expected output: 3
+
+findIndex(callbackFn, thisArg)
+
+Includes method - Boolean value
+The includes() method determines whether an array contains a certain element, returning true or false as appropriate.
+const array1 = [1, 2, 3];
+console.log(array1.includes(2));
+// Expected output: true
+includes(searchElement)
+includes(searchElement, fromIndex)
+
+**********************************************************************
+
+// map method - executes the function on each element in an array and returns a new array.
+
+const a = [1, 2, 3, 4, 5];
+const b = a.map((num) => {
+    return num * 2
+});
+console.log(b);
+
+//forEach method - executes the function on each element in an array. DOESN'T RETURN A NEW ARRAY.
+
+const numbers = [1, 2, 3, 4, 5];
+const result = [];
+a.forEach((num) => {
+    result.push(num * 2)
+})
+console.log(result);
+
+//filter method - returns the element of an array that meet the condition specified in a callback function.
+
+const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const filteredNumbers = num.filter((element) => {
+    return (element % 2 == 0)
+})
+console.log(filteredNumbers);
+
+// reduce - reduces the array into a single value
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const reducedArray = array.reduce((prevValue, curValue) => {
+    return prevValue + curValue
+}, 0);
+console.log(reducedArray);  // 55
+
+**********************************************************************
+
+The sort() method sorts the elements of an array 
+ converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// Expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// Expected output: Array [1, 100000, 21, 30, 4]
+
+**********************************************************************
+
+Array destructuring  -  Destructuring makes it easy to extract only what is needed.
+const a = [1, 2, 3, 4, 5];
+const [first, second, third, fourth, fifth] = a;
+console.log(first);
+console.log(second);
+console.log(third);
+console.log(fourth);
+console.log(fifth);
+const [first,...rest] = a;
+console.log(first);
+console.log(rest);
+const [,,third,,fifth] = a;
+
+Object destructuring  - Destructuring makes it easy to extract only what is needed.
+const person = {
+    name: 'John',
+    age: 30,
+    location: {
+        city: 'New York',
+        temp: 72
+        }
+        };
+        const {name: myName, age: myAge, location: {city: myCity, temp: myTemp}} = person;
+        console.log(myName);
+        console.log(myAge);
+        console.log(myCity);
+        console.log(myTemp);
+
+**********************************************************************
+
+This keyword - In JavaScript, the this keyword refers to an object.
+
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+// John Doe
+
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.
+
+**********************************************************************
+
+Promise - is said to be settled if it is either fulfilled or rejected, but not pending.
+
+let myPromise = newPromise((resolve, reject)=>{
+    let data
+    if(data){
+        resolve(data)
+    }else {
+        reject();
+    }
+})
+
+Await - await operator is used to wait for a Promise and get its fulfillment value. 
+        It can only be used inside an async function or at the top level of a module.
+
+function resolveAfter2Seconds(x) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(x);
+    }, 2000);
+  });
+}
+
+async function f1() {
+  const x = await resolveAfter2Seconds(10);
+  console.log(x); // 10
+}
+
+f1();
+
+**********************************************************************
+
+HTTP
+Hypertext Transfer Protocol (HTTP) is a method for encoding and transporting information between a client (such as a web browser) and a web server.
+ HTTP is the primary protocol for transmission of information across the Internet.
+
+Fetch method - Fetch Method to connect API
+
+async function logJSONData() {
+  const response = await fetch("http://example.com/movies.json");
+  const jsonData = await response.json();
+  console.log(jsonData);
+}
+
+**********************************************************************
+
+List of HTTP methods(get, post, patch, put, delete)
+
+Create NEW record =>POST
+read=>GET
+If the record exists then update else create a new record=>PUT
+update/modify=>PATCH
+delete=>DELETE
+
+**********************************************************************
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+      .then(response => response.json())
+      .then(json => console.log(json))
+
+JSON. stringify() - object into a string.
+JSON. parse() - string into a JavaScript object
+
+**********************************************************************
+
+Axios syntax 
+Axios is a promise based HTTP client for the browser and Node.js. 
+Axios makes it easy to send asynchronous HTTP requests to REST endpoints and perform CRUD operations.
+
+import axios from 'axios';
+//const axios = require('axios'); // legacy way
+
+// Make a request for a user with a given ID
+axios.get('/user?ID=12345')
+  .then(function (response) {
+    // handle success
+    console.log(response);
+  })
+  .catch(function (error) {
+    // handle error
+    console.log(error);
+  })
+
+  **********************************************************************
+
+
+How to set an item in local storage
+
+function populateStorage() {
+  localStorage.setItem("bgcolor", "red");
+  localStorage.setItem("font", "Helvetica");
+  localStorage.setItem("image", "myCat.png");
+}
+
+localStorage.setItem(keyname, value)
+
+
+How to get an item from local storage
+
+function setStyles() {
+  const currentColor = localStorage.getItem("bgcolor");
+  const currentFont = localStorage.getItem("font");
+  const currentImage = localStorage.getItem("image");
+
+  document.getElementById("bgcolor").value = currentColor;
+  document.getElementById("font").value = currentFont;
+  document.getElementById("image").value = currentImage;
+
+  htmlElem.style.backgroundColor = `#${currentColor}`;
+  pElem.style.fontFamily = currentFont;
+  imgElem.setAttribute("src", currentImage);
+}
+
+**********************************************************************
+
+Synchronous -  means the code runs in a particular sequence of instructions given in the program.
+
+Asynchronous - code execution allows to execution of the upcoming instructions immediately.
+
+**********************************************************************
+**********************************************************************
+**********************************************************************
+
+
+ React:
+
+Features of React
+JSX - JSX stands for JavaScript XML. It is a JavaScript syntax extension. Its an XML or HTML like syntax used by ReactJS.
+
+Components - ReactJS is all about components. 
+ReactJS application is made up of multiple components, and each component has its own logic and controls. 
+These components can be reusable which help you to maintain the code when working on larger scale projects.
+One-way Data Binding - ReactJS is designed in such a manner that follows unidirectional data flow or one-way data binding.
+
+Virtual DOM - A virtual DOM object is a representation of the original DOM object. It works like a one-way data binding. 
+Whenever any modifications happen in the web application, the entire UI is re-rendered in virtual DOM representation. 
+
+Simplicity - ReactJS uses JSX file which makes the application simple and to code as well as understand. 
+We know that ReactJS is a component-based approach which makes the code reusable as your need. This makes it simple to use and learn.
+
+Performance - it manages a virtual DOM. 
+
+**********************************************************************
+
+What is React ?
+
+The JS library for web and native user interfaces.
+React components are JavaScript functions. Want to show some content.
+React lets you build user interfaces out of individual pieces called components.
+React can be used as a base in the development of single-page or mobile applications.
+
+**********************************************************************
+
+Props in react - props stands for properties.
+Props are arguments passed into React components.
+Props are passed to components via HTML attributes.
+Props are Read-Only
+
+communication between components
+
+**********************************************************************
+
+Hooks - 
+They let you use state and other React features without writing a class.
+Hooks will not work in React class components.
+
+
+useState - declares a state variable that you can update directly.
+useState accepts an initial state and returns two values:
+The current state.
+A function that updates the state.
+
+import { useState } from "react";
+
+function FavoriteColor() {
+  const [color, setColor] = useState("");
+}
+
+The first value, color, is our current state.   
+The second value, setColor, is the function that is used to update our state.
+Lastly, we set the initial state to an empty string: useState("")
+
+
+**********************************************************************
+
+useReducer - declares a state variable with the update logic inside a reducer function.
+
+**********************************************************************
+
+useEffect connects a component to an external system.
+
+
+
+**********************************************************************
+
+useRef declares a ref. You can hold any value in it, but most often it’s used to hold a DOM node.
