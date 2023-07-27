@@ -8,9 +8,9 @@ const Form = () => {
     setName(e.target.value);
   }
 
-  function submitHandler(e) {  
+  function submitHandler(e) {
     submitState(name);
-    e.preventDefault();  // important to give defalut prevent to brower
+    e.preventDefault();  // important to give default prevent to browser
   }
 
   return (
